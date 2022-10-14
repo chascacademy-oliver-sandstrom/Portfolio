@@ -76,6 +76,20 @@ nav ul li a:hover::after {
     padding: 96px;
 	margin-top: 48px;
     margin: 0 auto;
+    display: flex;
+}
+
+#resume .left {
+    flex: 1;
+    position: relative;
+}
+
+#resume .right {
+    flex: 1;
+    position: relative;
+}
+
+#resume .center {
     max-width: 800px;
 }
  
@@ -132,17 +146,7 @@ nav ul li a:hover::after {
 
 .section-img {
     position: absolute;
-}
-
-.section-img.img-left {
-    width: 340px;
-    left: -150px;
-}
-
-.section-img.img-right {
-    right: -500px;
-width: 400px;
-top: -400px;
+    padding: 30px;
 }
 
 .section-img > img {
@@ -150,11 +154,21 @@ top: -400px;
     display: block;
 }
 
+.right .img-border-bottom-right {
+    width: 60px;
+    height: 60px;
+}
+
+.left .img-border-top-left {
+    width: 60px;
+    height: 60px;
+}
+
 .img-border-top-left {
+    top: 0;
+    left: 0;
     width: 30px;
     height: 30px;
-    top: -30px;
-    left: -30px;
     position: absolute;
     border-left: 8px solid red;
     border-top: 8px solid red;
@@ -163,8 +177,8 @@ top: -400px;
 .img-border-bottom-right {
     width: 30px;
     height: 30px;
-    right: -30px;
-    bottom: -30px;
+    right: 0;
+    bottom: 0;
     position: absolute;
     border-right: 8px solid red;
     border-bottom: 8px solid red;
