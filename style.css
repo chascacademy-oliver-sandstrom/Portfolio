@@ -24,10 +24,17 @@ header {
 	position: fixed;
 	z-index: 3;
 }
+
+.nav-left {
+    text-align: left;
+}
+
+.nav-right {
+    text-align: right;
+}
  
 nav ul {
     flex: 1;
-    text-align: right;
     padding-right: 30px;
 }
  
@@ -73,7 +80,7 @@ nav ul li a:hover::after {
 }
 
 #resume {
-    padding: 96px;
+    padding: 20px;
 	margin-top: 48px;
     margin: 0 auto;
     display: flex;
@@ -149,6 +156,18 @@ nav ul li a:hover::after {
     padding: 30px;
 }
 
+.left .section-img {
+    top: 300px;
+    left: 100px;
+    min-width: 400px;
+}
+
+.right .section-img {
+    bottom: 600px;
+    right: 0;
+    min-width: 300px;
+}
+
 .section-img > img {
     max-width: 100%;
     display: block;
@@ -170,18 +189,22 @@ nav ul li a:hover::after {
     width: 30px;
     height: 30px;
     position: absolute;
-    border-left: 8px solid red;
-    border-top: 8px solid red;
+    border-left: 8px solid rgb(255, 60, 0);
+    border-top: 8px solid rgb(255, 60, 0);
 }
 
 .img-border-bottom-right {
     width: 30px;
     height: 30px;
     right: 0;
-    bottom: 0;
+    bottom: 20px;
     position: absolute;
-    border-right: 8px solid red;
-    border-bottom: 8px solid red;
+    border-right: 8px solid rgb(255, 60, 0);
+    border-bottom: 8px solid rgb(255, 60, 0);
+}
+
+.right p, .left p {
+    font-weight: 1000;
 }
  
 .bead {
