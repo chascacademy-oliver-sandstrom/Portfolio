@@ -427,7 +427,7 @@ nav ul li a.active::after {
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
-    margin-top: 120px;
+    margin-top: 130px;
 }
 
 .icon a:before {
@@ -517,7 +517,7 @@ nav ul li a.active::after {
         grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
     }
     .icon a {
-        margin-top: 70px;
+        margin-top: 80px;
     }
 }
 
