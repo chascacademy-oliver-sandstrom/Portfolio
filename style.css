@@ -562,8 +562,8 @@ nav ul li a.active::after {
     }
 }
 
-@media screen and (max-width: 1446px) {
+@media screen and (max-width: 1520px) {
     .container {
-        grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
     }
 }
