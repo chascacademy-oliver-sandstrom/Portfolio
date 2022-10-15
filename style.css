@@ -427,7 +427,7 @@ nav ul li a.active::after {
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .icon a:before {
@@ -534,6 +534,9 @@ nav ul li a.active::after {
     #portfolio h1:last-child {
         color: #f5f5f5;
         font-size: 30px;
+        margin-top: 60px;
+    }
+    .icon a {
         margin-top: 60px;
     }
 }
