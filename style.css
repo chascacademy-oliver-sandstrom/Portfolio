@@ -427,7 +427,7 @@ nav ul li a.active::after {
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .icon a:before {
