@@ -260,14 +260,14 @@ nav ul li a.active::after {
 
 #portfolio h1 {
     color: #f5f5f5;
-    font-size: 30px;
-    margin-top: 60px;
+    font-size: 38px;
+    margin-top: 100px;
 }
 
 #portfolio h1:last-child {
     color: #f5f5f5;
     font-size: 38px;
-    margin-top: 250px;
+    margin-top: 130px;
 }
 
 #portfolio h2 {
@@ -525,6 +525,11 @@ nav ul li a.active::after {
     }
     .portfolio-slide {
         max-width: 90%;
+    }
+    #portfolio h1 {
+        color: #f5f5f5;
+        font-size: 30px;
+        margin-top: 60px;
     }
     #portfolio h1:last-child {
         color: #f5f5f5;
