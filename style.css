@@ -240,7 +240,7 @@ nav ul li a.active::after {
  
 #portfolio {
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,7 +267,7 @@ nav ul li a.active::after {
 #portfolio h2 {
     color: #f5f5f5;
     font-size: 16px;
-    padding: 40px 0 10px 0;
+    padding: 20px 0 10px 0;
     text-align: center;
 
 }
@@ -363,7 +363,7 @@ nav ul li a.active::after {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
     grid-template-rows: repeat(2, 200px);
     grid-gap: 10px;
     grid-auto-flow: dense;
@@ -559,5 +559,11 @@ nav ul li a.active::after {
         margin: 0;
         border-bottom: 2px solid black;
         border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 1446px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(110px,1fr));
     }
 }
