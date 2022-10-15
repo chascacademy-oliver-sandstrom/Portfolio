@@ -264,6 +264,12 @@ nav ul li a.active::after {
     margin-top: 60px;
 }
 
+#portfolio h1:last-child {
+    color: #f5f5f5;
+    font-size: 38px;
+    margin-top: 250px;
+}
+
 #portfolio h2 {
     color: #f5f5f5;
     font-size: 16px;
@@ -358,7 +364,6 @@ nav ul li a.active::after {
     justify-content: center;
     background-color: black;
     min-width: 100%;
-    padding: 10px
 }
 
 .container {
@@ -520,6 +525,11 @@ nav ul li a.active::after {
     }
     .portfolio-slide {
         max-width: 90%;
+    }
+    #portfolio h1:last-child {
+        color: #f5f5f5;
+        font-size: 30px;
+        margin-top: 60px;
     }
 }
 
