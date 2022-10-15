@@ -8,6 +8,10 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: #f5f5f5;
+}
  
 header {
     background-color: black;
@@ -19,10 +23,15 @@ header {
 .nav {
     display: flex;
     width: 100%;
-    padding: 5px 0; 
+    padding: 20px; 
 	background-color: #000;
 	position: fixed;
 	z-index: 3;
+}
+
+main {
+    display: inline-block;
+    width: 100%;
 }
 
 .nav-left {
@@ -31,17 +40,13 @@ header {
 
 .nav-right {
     text-align: right;
-}
- 
-nav ul {
     flex: 1;
-    padding-right: 30px;
 }
  
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 30px;
+    margin: 0 20px;
 }
  
 nav ul li a {
@@ -66,6 +71,10 @@ nav ul li a:hover::after {
     width: 100%;
 }
  
+nav ul li a.active::after {
+    width: 100%;
+}
+
 #created-container {
     color: white;
 	flex: 1;
@@ -243,23 +252,41 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;
+    flex: 1;    
+    margin-top: 30px;
+    width: 100%;
 }
 
 #portfolio h1 {
     color: white;
+    font-size: 30px;
+    margin-top: 35px;
 }
 
 #portfolio h2 {
     color: white;
     font-size: 16px;
-    padding: 20px 0 10px 0;
+    padding: 40px 0 10px 0;
+    text-align: center;
+
+}
+
+#portfolio h2 span {
+    display: block;
+}
+
+#orange {
+    color: #F1662A;
+}
+
+#blue {
+    color: #33A9DC;
 }
 
 .portfolio-slide {
     position: relative;
     max-width: 40rem;
-    /* margin: 0 auto; */
+    width: 100%;
 }
 
 .slider {
@@ -304,30 +331,37 @@ nav ul li a:hover::after {
         opacity: 0;
 }
 
-/* .icon a {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    
-} */
-
 #portfolio .icon {
     margin-bottom: 80px;
+}
+
+.download {
+    color: white;
+}
+
+.download a {
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.download a:visited i {
+    text-decoration: none;
+    color: white;
 }
 
 .icon a {
     position: relative;
     display: inline-block;
-    padding: 15px 30px;
+    padding: 5px 20px;
     border: 2px solid white;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
+    margin-top: 35px;
 }
 
 .icon a:before {
@@ -364,4 +398,108 @@ nav ul li a:hover::after {
 .icon a span {
     position: relative;
     z-index: 3;
+}
+
+.about {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.about-text {
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+}
+
+.about p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about-img {
+    max-width: 600px;
+    padding: 30px;
+    position: relative;
+}
+
+.about-img p {
+    font-weight: 1000;
+    text-align: left;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.about-icon {
+    margin: 20px;
+    font-size: 25px;
+}
+
+.about-icon a:visited i {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1050px) {
+    .right, .left {
+        display: none;
+    }
+
+    #resume {
+        overflow: hidden;
+    }
+    .about-img {
+        max-width: 480px;
+    }
+    .portfolio-slide {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .line {
+        display: none !important;
+    }
+    .bead {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+    .nav ul li {
+        margin: 0 6px;
+    }
+    .slider {
+        border-radius: 0;
+    }
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+    .about-img {
+        max-width: 380px;
+    }
+    .about-text {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .about-text p {
+        margin-top: 10px;
+        line-height: 20px;
+    }
+    .section {
+        margin: 0;
+        border-bottom: 2px solid black;
+        border-radius: 0;
+    }
 }
