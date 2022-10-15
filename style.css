@@ -517,7 +517,7 @@ nav ul li a.active::after {
         grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
     }
     .icon a {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 }
 
@@ -546,7 +546,7 @@ nav ul li a.active::after {
         margin-top: 60px;
     }
     .icon a {
-        margin-top: 20px;
+        margin-top: 60px;
     }
 }
 
@@ -586,9 +586,6 @@ nav ul li a.active::after {
         margin: 0;
         border-bottom: 2px solid black;
         border-radius: 0;
-    }
-    .icon a {
-        margin-top: 60px;
     }
 }
 
