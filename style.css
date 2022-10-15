@@ -363,7 +363,7 @@ nav ul li a.active::after {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
     grid-template-rows: repeat(2, 200px);
     grid-gap: 10px;
     grid-auto-flow: dense;
